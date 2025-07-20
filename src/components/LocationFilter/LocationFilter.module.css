@@ -1,0 +1,55 @@
+.location {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-gray, #6c717b);
+}
+
+.locationInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 360px;
+  height: 56px;
+  padding: 18px 18px 18px 46px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-main, #101828);
+  background: var(--color-inputs, #f7f7f7);
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.locationInput::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-gray, #6c717b);
+}
+
+.locationActiveIcon,
+.locationIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.locationIcon {
+  fill: #6c717b;
+}
+
+.locationWrapper {
+  position: absolute;
+  bottom: 12px;
+  left: 18px;
+}
