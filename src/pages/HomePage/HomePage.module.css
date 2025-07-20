@@ -1,0 +1,73 @@
+.homePageContainer {
+  padding: 260px 64px;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url('/src/images/Hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-resolution: 2dppx) {
+  .homePageContainer {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url('/src/images/Hero@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.homePageTitle {
+  margin-bottom: 16px;
+
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+
+  color: var(--color-inputs, #f7f7f7);
+}
+
+.homePageText {
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+
+  color: var(--color-inputs, #f7f7f7);
+}
+
+.navBtn {
+  display: flex;
+  width: 173px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+
+  color: var(--color-White, #fff);
+  background: var(--color-button, #e44848);
+  border-radius: 200px;
+  text-decoration: none;
+
+  transition: background 0.3s ease-in-out;
+}
+
+.navBtn:hover {
+  background: var(--color-button-hover, #d84343);
+}
